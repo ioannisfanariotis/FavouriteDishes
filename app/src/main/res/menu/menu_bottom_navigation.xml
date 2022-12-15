@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_all_dishes"
+        android:icon="@drawable/ic_all_dishes"
+        android:title="@string/title_all_dishes" />
+
+    <item
+        android:id="@+id/navigation_favourite"
+        android:icon="@drawable/ic_favourite"
+        android:title="@string/title_favourite_dishes" />
+
+    <item
+        android:id="@+id/navigation_random"
+        android:icon="@drawable/ic_random"
+        android:title="@string/title_random_dish" />
+</menu>
