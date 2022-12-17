@@ -1,6 +1,6 @@
 FavouriteDishes app gives the user the opportunity to create and store a recipe for a dish on the device. Furthermore, it  will execute a corresponding API call and
 get the result of a random dish recipe that is also stored. The user also gets informed via notification about new available recipe. Third Party Libraries that are
-used: DEXTER, GLIDE, PALLETE, NAVIGATION COMPONENT. Technologies that are used: VIEW BINDING, MVVM, ROOM DATABASE, LIVEDATA,RETROFIT, RX JAVA, WORK MANAGER.
+used: DEXTER, GLIDE, PALLETE, NAVIGATION COMPONENT. Technologies that are used: VIEW BINDING, MVVM, ROOM DATABASE, LIVEDATA, RETROFIT, RXJAVA, WORK MANAGER.
 
 ![1](https://user-images.githubusercontent.com/109162046/208242379-c9980bf0-f3e4-47f4-a014-f38f803f5f74.png)
 ![2](https://user-images.githubusercontent.com/109162046/208242382-7fc1b1b1-47dd-44df-801b-0906aab7bde6.png)
