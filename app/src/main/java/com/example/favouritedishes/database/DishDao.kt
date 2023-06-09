@@ -1,11 +1,11 @@
-package com.example.favouritedishes.models.database
+package com.example.favouritedishes.database
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.models.models.Dish
 import kotlinx.coroutines.flow.Flow
 
 @Dao

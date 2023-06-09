@@ -1,8 +1,8 @@
 package com.example.favouritedishes.viewmodels
 
 import androidx.lifecycle.*
-import com.example.favouritedishes.models.database.DishRepository
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.repository.DishRepository
+import com.example.favouritedishes.models.models.Dish
 import kotlinx.coroutines.launch
 
 class DishViewModel(private val repo: DishRepository):ViewModel() {

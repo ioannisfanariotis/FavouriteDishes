@@ -1,25 +1,25 @@
-package com.example.favouritedishes.models.database
+package com.example.favouritedishes.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.models.models.Dish
 
 @Database(entities = [Dish::class], version = 1)
-abstract class DishRoomDatabase : RoomDatabase(){
+abstract class AppDatabase : RoomDatabase(){
 
     abstract fun dishDao(): DishDao
     companion object{
         @Volatile
-        private var INSTANCE: DishRoomDatabase? = null
+        private var INSTANCE: AppDatabase? = null
 
-        fun getDatabase(context: Context): DishRoomDatabase{
+        fun getDatabase(context: Context): AppDatabase {
             //if INSTANCE == null -> create it, else -> return it
             return INSTANCE ?: synchronized(this){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    DishRoomDatabase::class.java,
+                    AppDatabase::class.java,
                     "dish_database")
                     .fallbackToDestructiveMigration()
                     .build()

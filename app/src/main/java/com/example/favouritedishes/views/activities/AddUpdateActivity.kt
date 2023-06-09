@@ -30,11 +30,11 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.favouritedishes.R
-import com.example.favouritedishes.application.DishApplication
+import com.example.favouritedishes.App
 import com.example.favouritedishes.databinding.ActivityAddUpdateBinding
 import com.example.favouritedishes.databinding.DialogImageSelectionBinding
 import com.example.favouritedishes.databinding.DialogListsBinding
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.models.models.Dish
 import com.example.favouritedishes.utils.Constants
 import com.example.favouritedishes.views.adapters.ListsAdapter
 import com.example.favouritedishes.viewmodels.DishViewModel
@@ -62,7 +62,7 @@ class AddUpdateActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var listAdapter: ListsAdapter
 
     private val viewModel: DishViewModel by viewModels {
-        DishViewModelFactory((application as DishApplication).repository)
+        DishViewModelFactory((application as App).repository)
     }
 
     companion object{

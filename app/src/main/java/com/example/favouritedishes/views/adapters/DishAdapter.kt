@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.favouritedishes.R
 import com.example.favouritedishes.databinding.RvItemDishBinding
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.models.models.Dish
 import com.example.favouritedishes.utils.Constants
 import com.example.favouritedishes.views.activities.AddUpdateActivity
 import com.example.favouritedishes.views.fragments.AllDishesFragment

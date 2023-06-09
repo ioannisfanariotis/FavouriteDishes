@@ -2,8 +2,8 @@ package com.example.favouritedishes.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.favouritedishes.models.entities.RandomDish
-import com.example.favouritedishes.models.network.RandomDishApiService
+import com.example.favouritedishes.models.models.RandomDish
+import com.example.favouritedishes.network.Service
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
@@ -11,7 +11,7 @@ import io.reactivex.schedulers.Schedulers
 
 class RandomDishViewModel : ViewModel() {
 
-    private val service = RandomDishApiService()
+    private val service = Service()
     private val disposable = CompositeDisposable()
     val load = MutableLiveData<Boolean>()
     val response = MutableLiveData<RandomDish.Recipes>()

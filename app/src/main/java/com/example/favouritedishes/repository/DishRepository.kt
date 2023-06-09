@@ -1,10 +1,11 @@
-package com.example.favouritedishes.models.database
+package com.example.favouritedishes.repository
 
 import androidx.annotation.WorkerThread
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.database.DishDao
+import com.example.favouritedishes.models.models.Dish
 import kotlinx.coroutines.flow.Flow
 
-class DishRepository(private val dishDao: DishDao ) {
+class DishRepository(private val dishDao: DishDao) {
 
     @WorkerThread
     suspend fun insertDishData(dish: Dish){

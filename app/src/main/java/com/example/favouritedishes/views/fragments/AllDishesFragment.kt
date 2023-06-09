@@ -11,10 +11,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.favouritedishes.R
-import com.example.favouritedishes.application.DishApplication
+import com.example.favouritedishes.App
 import com.example.favouritedishes.databinding.DialogListsBinding
 import com.example.favouritedishes.databinding.FragmentAllDishesBinding
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.models.models.Dish
 import com.example.favouritedishes.utils.Constants
 import com.example.favouritedishes.views.activities.AddUpdateActivity
 import com.example.favouritedishes.views.activities.MainActivity
@@ -31,7 +31,7 @@ class AllDishesFragment : Fragment() {
     private lateinit var dialog: Dialog
 
     private val viewModel: DishViewModel by viewModels {
-        DishViewModelFactory((requireActivity().application as DishApplication).repository)
+        DishViewModelFactory((requireActivity().application as App).repository)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {

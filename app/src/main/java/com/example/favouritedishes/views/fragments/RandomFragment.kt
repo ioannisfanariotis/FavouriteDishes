@@ -14,10 +14,10 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.favouritedishes.R
-import com.example.favouritedishes.application.DishApplication
+import com.example.favouritedishes.App
 import com.example.favouritedishes.databinding.FragmentRandomBinding
-import com.example.favouritedishes.models.entities.Dish
-import com.example.favouritedishes.models.entities.RandomDish
+import com.example.favouritedishes.models.models.Dish
+import com.example.favouritedishes.models.models.RandomDish
 import com.example.favouritedishes.utils.Constants
 import com.example.favouritedishes.viewmodels.DishViewModel
 import com.example.favouritedishes.viewmodels.DishViewModelFactory
@@ -118,7 +118,7 @@ class RandomFragment : Fragment() {
                     true
                 )
                 val dishViewModel: DishViewModel by viewModels {
-                    DishViewModelFactory((requireActivity().application as DishApplication).repository)
+                    DishViewModelFactory((requireActivity().application as App).repository)
                 }
                 dishViewModel.insertDishData(randomDishDetails)
                 favAdded = true

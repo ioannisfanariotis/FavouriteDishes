@@ -1,4 +1,4 @@
-package com.example.favouritedishes.models.entities
+package com.example.favouritedishes.models.models
 
 object RandomDish {
     data class Recipes(

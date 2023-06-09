@@ -20,9 +20,9 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.favouritedishes.R
-import com.example.favouritedishes.application.DishApplication
+import com.example.favouritedishes.App
 import com.example.favouritedishes.databinding.FragmentDishDetailsBinding
-import com.example.favouritedishes.models.entities.Dish
+import com.example.favouritedishes.models.models.Dish
 import com.example.favouritedishes.utils.Constants
 import com.example.favouritedishes.viewmodels.DishViewModel
 import com.example.favouritedishes.viewmodels.DishViewModelFactory
@@ -32,7 +32,7 @@ class DishDetailsFragment : Fragment() {
 
     private var binding : FragmentDishDetailsBinding? = null
     private val viewModel: DishViewModel by viewModels {
-        DishViewModelFactory((requireActivity().application as DishApplication).repository)
+        DishViewModelFactory((requireActivity().application as App).repository)
     }
     private var dish: Dish? = null
 

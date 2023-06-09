@@ -1,4 +1,4 @@
-package com.example.favouritedishes.models.entities
+package com.example.favouritedishes.models.models
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
