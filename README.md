@@ -9,7 +9,7 @@ Architecture
 
 Libraries included for this project
 - View Binding
-- Navigation Components
+- Navigation Component
 - Room Database
 - Livedata
 - Retrofit
